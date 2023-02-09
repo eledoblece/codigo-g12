@@ -26,7 +26,18 @@ git config --list
 * Para inicializar nuestro repositorio en git:
 
 ```bash
+git init
+```
+
+* Para ver el estado de nuestros cambios:
+
+```bash
 git status
 ```
 
+* Para preparar nuestros archivos para la zona de stage (prepararlos para commit)
 
+```bash
+git add .
+git add nombreDelArchivo.extension
+```
