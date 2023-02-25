@@ -37,6 +37,6 @@ btnBack.onclick = function () {
   }
 
   challenges.scrollBy({
-    left: slider+50,
+    left: slider-50,
   });
 };

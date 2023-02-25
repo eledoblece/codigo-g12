@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas:
+      "cabecera menu menu menu"
+      "main hero hero hero"
+      "main image image image"
+      "main extra extra extra"
+      "banner banner banner banner";
+    grid-template-rows: 10vh 60vh repeat(3, 10vh);
+}
+
+.header {
+    background-color: #00034c;
+    grid-area: cabecera;
+}
+
+.nav {
+    background-color: rgb(255, 78, 78);
+    grid-area: menu;
+}
+
+.hero {
+    background-color: rgb(17, 100, 133);
+    grid-area: hero;
+}
+
+.main {
+    background-color: #00034c;
+    grid-area: main;
+}
+
+.image {
+    background-color: aquamarine;
+    grid-area: image;
+  }
+  
+  .extra {
+    background-color: green;
+    grid-area: extra;
+  }
+  
+  .banner {
+    background-color: rgb(234, 182, 26);
+    grid-area: banner;
+  }
