@@ -69,4 +69,8 @@
     color: #fff;
   }
   
-  @media
+  @media screen and (max-width: 480px) {
+    main > div {
+      min-width: 80%;
+    }
+  }
