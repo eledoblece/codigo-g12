@@ -9,26 +9,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"
     />
-
     <title>Tip calculator app</title>
     <link rel="stylesheet" href="./challange-s3.css"/>
 </head>
-
-<body>
-    <div class="title">
-    <h2>SPLI</h2>
-    <h2>TTER</h2>
+<body class="pri-color primary-font">
+    <div class="flex justify-center items-center mt-150">
+        <img src="./images/logo.svg" alt="" />
     </div>
-    <main class="container">
-            <div class="container1">
-                <form class="form1">
-                <input type="image" class="dollar" id="dollar1" src="./images/icon-dollar.svg">
-                <input type="text" class="textBox" id="textBox1" placeholder="0">
-                </form>
+    <main class="flex items-center justify-center">
+        <div class="borderRadius principalContainer flex items-center justify-center mt-100 sec-color justi">
+            <div class="containerA p-10 items-center justify-center borderRadius">
+                <h5>Bill</h5>
+                <div class="flex mb-10 borderRadius1 fou-color">
+                    <input
+                        type="image"
+                        height="16"
+                        class="flex iconPerson"
+                        src="./images/icon-dollar.svg"
+                    />
+                    <input 
+                        type="text"
+                        height="40"
+                        width="350"
+                        class="flexG1 textBox borderNone bgTransparent fontSize primary-font textColor"
+                        id="textBox1" 
+                        placeholder="0"
+                    />
+                </div>
+                <h5>Select Tip %</h5>
+                <div class="flex ContainerA2 mt-10 spaceBetween">
+                    <button class="flex primary-font percentage perWidth fontSize items-center justify-center borderNone borderRadius1">5%</button>
+                    <button class="flex primary-font percentage perWidth fontSize items-center justify-center borderNone borderRadius1">10%</button>
+                    <button class="flex primary-font percentage perWidth fontSize items-center justify-center borderNone borderRadius1">15%</button>
+                </div>
+                <div class="flex ContainerA3 mt-10 mb-35 spaceBetween">
+                    <button class="flex primary-font percentage fontSize perWidth items-center justify-center borderNone borderRadius1">25%</button>
+                    <button class="flex primary-font percentage fontSize perWidth items-center justify-center borderNone borderRadius1">50%</button>
+                    <input 
+                    type="text"
+                    class="flex primary-font fontSize borderNone1 fou-color perWidth borderRadius1 textColor1 textBoxCustom"
+                    id=""
+                    placeholder="Custom"
+                    />
+                </div>
+                <h5>Number of People</h5>
+                <div class="flex p-10 Container4 mt-10 borderRadius1 fou-color he20">
+                    <input
+                        type="image"
+                        height="16"
+                        class="flex iconPerson"
+                        src="./images/icon-person.svg"
+                    />
+                    <input 
+                        type="text"
+                        class="flexG1 textBox borderNone bgTransparent fontSize primary-font textColor"
+                        id="textBox2" 
+                        placeholder="0"
+                    />
+                </div>
             </div>
-        </div>
-        <div class="container2">
-            <h3>ALFREDO</h2>
+            <div class="containerB p-5 borderRadius items-center justify-center p-10 fif-color">
+                <div class="containerB1 flex p-reset1 spaceBetween">
+                    <div>
+                        <h5 id="TxB1">Tip Amount</h5>
+                        <h6 id="Tx2B1">/ person</h6>
+                    </div>
+                    <div class="flex fSize30 text1">$0.00</div>
+                </div>
+                <div class="containerB2 flex p-reset2 spaceBetween">
+                    <div class="">
+                        <h5 id="TxB2">Total</h5>
+                        <h6 id="Tx2B2">/ person</h6>
+                    </div>
+                    <div class="flex fSize30 text1">$0.00</div>
+                </div>
+                <button class="containerB3 borderNone borderRadius1 fontSize18 p-reset primary-font sev-color ResetWidth">RESET</button> 
+            </div>
         </div>
     </main>
 </body>
